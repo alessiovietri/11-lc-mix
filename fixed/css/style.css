@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+body {
+    font-family: Whitney, 'Helvetica', 'Helvetica Neue', sans-serif;
+    margin-top: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bg-gray {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.my-btn {
+    display: inline-block;
+    padding: 0.6em 1em;
+    border-radius: 20px;
+    background-color: #ddd;
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.my-btn.small {
+    font-size: 12px;
+}
+
+.my-btn.dark {
+    background-color: #222;
+    color: #ddd;
+}
+
+.my-btn.violet {
+    background-color: #8ea1e1;
+    color: #ddd;
+}
+
+p {
+    line-height: 24px;
+}
+
+.wave {
+    background-image: url('../img/wave.svg');
+    background-size: cover;
+    height: 100px;
+    opacity: 0.2;
+}
+
+.wave.rotated {
+    transform: rotate(180deg);
+}
+
+/* HEADER */
+header {
+    background-color: #255EE9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+}
+
+.header-top {
+    padding: 15px 0;
+}
+
+.main-header {
+    display: flex;
+
+}
+
+.main-header > * {
+    padding: 10px;
+}
+
+.main-header > .small-column {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header > .small-column:last-child {
+    justify-content: flex-end;
+}
+
+.main-header > .big-column {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header > .big-column ul {
+    list-style: none;
+    text-align: center;
+}
+
+.main-header > .big-column ul li {
+    display: inline-block;
+}
+
+.main-header > .big-column ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 600px;
+}
+
+.header-bottom .jumbotron {
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+.header-bottom .jumbotron h1 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+
+.header-bottom .jumbotron p {
+    margin-bottom: 20px;
+}
+
+/* MAIN */
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: relative;
+    left: 50%;
+}
