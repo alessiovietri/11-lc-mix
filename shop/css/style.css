@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+body {
+    font-family: Whitney, 'Helvetica', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+main > div {
+    width: 33%;
+    border: 1px solid gray;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+main > div > img {
+    width: 100%;
+}
+
+main > div > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+}
+
+main > div > span.special-discount {
+    background-color: green;
+}
+
+main > div > .save-favorite {
+    text-align: center;
+    color: red;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+main > div:hover {
+    opacity: 0.5;
+}
+
+main > div:hover > .save-favorite {
+    display: block;
+}
